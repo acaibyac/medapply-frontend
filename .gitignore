@@ -1,0 +1,13 @@
+# Next.js / Node
+node_modules
+.next
+out
+
+# Env & secrete
+.env
+.env.*
+!.env.example
+
+# Sistem / diverse
+.DS_Store
+.vercel
