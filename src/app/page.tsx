@@ -1,29 +1,8 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F5F8FC]">
-      {/* Top bar (simplu) */}
-      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <div className="text-2xl font-bold text-[#005EB8]">MedApply</div>
-        <nav className="flex items-center gap-4 text-sm">
-          <a href="/" className="text-[#425563] hover:underline">Home</a>
-          <a href="/apply" className="text-[#425563] hover:underline">How it works</a>
-          <a
-            href="/apply"
-            className="rounded-md border border-[#0072CE] px-3 py-1.5 font-medium text-[#0072CE] hover:bg-[#E6F0FA]"
-          >
-            START Example Statement
-          </a>
-          <a
-            href="/apply"
-            className="rounded-md bg-[#005EB8] px-3.5 py-1.5 font-medium text-white hover:bg-[#0072CE]"
-          >
-            See Examples
-          </a>
-        </nav>
-      </header>
-
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-6">
+      <section id="home" className="mx-auto max-w-6xl px-6">
         <div className="grid items-center gap-8 rounded-2xl bg-gradient-to-br from-[#E6F0FA] to-white p-8 md:grid-cols-2">
           <div>
             <h1 className="text-4xl font-extrabold leading-tight text-[#003087]">
@@ -33,6 +12,7 @@ export default function Home() {
               AI-powered Personal Statement Builder — aligned with NHS Band roles.
             </p>
             <a
+              id="start"
               href="/apply"
               className="mt-6 inline-block rounded-full bg-[#005EB8] px-6 py-3 text-white shadow hover:bg-[#0072CE]"
             >
@@ -52,7 +32,7 @@ export default function Home() {
       </section>
 
       {/* Path to Success */}
-      <section className="mx-auto mt-10 max-w-6xl grid gap-8 px-6 md:grid-cols-2">
+      <section id="how" className="mx-auto mt-10 max-w-6xl grid gap-8 px-6 md:grid-cols-2">
         <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
           <h2 className="text-xl font-semibold text-[#003087]">Your Path to Success</h2>
           <div className="mt-4 grid grid-cols-3 gap-4">
